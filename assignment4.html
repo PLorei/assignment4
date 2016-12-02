@@ -7,17 +7,22 @@
   </head>
   <body>
     <h1 class="h1">Predictive Search</h1>
-
+    <h1 id="results-header">Search Results</h1>
     <div class="flexsearch">
       <div class="flexsearch-wrapper">
         <!-- You'll handle the form with js, so no need for method and action -->
         <form class="flexsearch-form" id="mainForm">
           <div class="flexsearch-input-wrapper">
-            <input class="flexsearch-input" type="search" placeholder="search">
+            <input class="flexsearch-input" type="search" placeholder="search" onkeyup="keyPressed()">
           </div>
-          <input class="flexsearch-submit" type="submit" value="&#10140;"/>
+          <input class="flexsearch-submit" type="submit" value="&#10140;" onclick="showResults(); return false;"/>
         </form>
       </div>
+    </div>
+
+    <div class="results">
+      <ul id="results-list" class="empty">
+      </ul>
     </div>
 
 

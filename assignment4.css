@@ -3,6 +3,49 @@
   And anything elese you add to the application, for that matter.
 */
 
+#results-list {
+  list-style-type: none;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+#results-header {
+  display:none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #0d92cf;
+}
+
+.results-element:hover {
+  border-color: #0d92cf;
+  background-color: aliceblue;
+  transition: border-color .3s ease-in, background-color .3s ease-in;
+}
+
+.results-element {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-color: black;
+  background-color: white;
+  transition: border-color .3s ease-in, background-color .3s ease-in;
+}
+
+.empty {
+  left: -200px;
+  transition: left .5s linear;
+}
+
+.full {
+  left: 0px;
+  transition: left .5s linear;
+}
+
 .flexsearch-wrapper {
   height: auto;
   width: auto;
